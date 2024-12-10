@@ -1,0 +1,41 @@
+{
+  "name": "admin-travelynk",
+  "version": "1.0.0",
+  "description": "This repository contains the backend codebase for the final project. It is built using Node.js and Express.js, with a layered architecture for better code organization and scalability. The backend is responsible for handling business logic, managing the database, and providing APIs for the frontend.",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node ./src/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon ./src/index.js",
+    "test": "jest --coverage",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-jest": "^29.7.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express-edge": "^3.0.0",
+    "express": "^4.21.1",
+    "express-list-endpoints": "^7.1.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/eslint-parser": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "@eslint/js": "^9.14.0",
+    "dotenv-cli": "^7.4.2",
+    "eslint": "^9.14.0",
+    "nodemon": "^3.1.7"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
+}

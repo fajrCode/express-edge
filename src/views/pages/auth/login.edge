@@ -1,0 +1,8 @@
+@section('content')
+<h1>{{ login }}</h1>
+@each(food in foods)
+<li>{{ food }}</li>
+@else
+<p>Sorry.. There are no foods.</p>
+@end
+@endsection
